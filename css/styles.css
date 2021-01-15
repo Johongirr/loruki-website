@@ -279,7 +279,6 @@ img {
 }
 .features .features__text-box {
     align-self: center;
-    text-align: center;
     color: var(--white);
 }
 .features .features__title {
@@ -290,7 +289,7 @@ img {
     font-size: 1.1rem;
 }
 .features .features__img-container {
-    justify-self: cen;
+    justify-self: end;
 }
 .features .features__img {
     width: 200px;
@@ -500,6 +499,12 @@ img {
     }
     .features .features__img-container {
         justify-self: center;
+    }
+    .features .features__text-box {
+        text-align: center;
+    }
+    .platform .platform__text-box {
+        text-align: center;
     }
     .platform .platform__img-container {
         justify-self: center;
