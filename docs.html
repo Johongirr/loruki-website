@@ -1,254 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;display=swap">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/utlities.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Loruki Web Service</title>
-   
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="ie=edge">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;display=swap">
+<link rel=stylesheet href=css/reset.css>
+<link rel=stylesheet href=css/utlities.css>
+<link rel=stylesheet href=css/styles.css>
+<title>Loruki Web Service</title>
 </head>
 <body>
-    <!-- header  -->
-    <header class="header py-2">
-        <div class="container">
-            <nav class="header__nav nav flex flex--justify-content-between flex--align-items-center">
-                <span class="header__logo nav__logo">
-                    Loruki.
-                </span>
-                <ul class="header__nav-list nav__list flex">
-                    <li class="header__nav-list-item nav__list-item">
-                        <a href="index.html" class="header__nav-list-link nav__list-link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="header__nav-list-item nav__list-item">
-                        <a href="features.html" class="header__nav-list-link nav__list-link">
-                            Features
-                        </a>
-                    </li>
-                    <li class="header__nav-list-item nav__list-item">
-                        <a href="docs.html" class="header__nav-list-link nav__list-link">
-                            Docs
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- main -->
-    <main id="main">
-        <!-- docs -->
-        <section class="docs">
-            <div class="container">
-                <div class="row grid grid-gap-2 grid-column-xl-2 grid-column-sm-1">
-                    <div class="docs__text-box">
-                        <h1 class="docs__title">
-                            Docs
-                        </h1>
-                        <p class="docs__paragraph mt-1">
-                            Learn how to work with the Loruki platform
-                        </p>
-                    </div>
-                    <figure class="docs__img-container">
-                        <img src="images/docs.png" alt="image that represents docs" class="docs__img">
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- docs nav and docs intro -->
-        <section class="docs-main my-3">
-            <div class="container">
-                <div class="row grid grid-gap-1">
-                    <div class="docs-main__left">
-                        <aside class="card docs-main__card">
-                            <h3 class="docs-main__essentials-title mb-1">
-                                Essentials
-                            </h3>
-                            <nav class="docs-main__nav-top">
-                                <ul class="docs-main__nav-list">
-                                    <li class="docs-main__nav-top-list-item docs-main__nav-list-item">
-                                        <a href="#" class="docs-main__nav-top-list-link active docs-main__nav-list-link">
-                                            Introduction
-                                        </a>
-                                    </li>
-                                    <li class="docs-main__nav-top-list-item docs-main__nav-list-item">
-                                        <a href="#" class="docs-main__nav-top-list-link docs-main__nav-list-link">
-                                            About Loruki
-                                        </a>
-                                    </li>
-                                    <li class="docs-main__nav-top-list-item docs-main__nav-list-item">
-                                        <a href="#" class="docs-main__nav-top-list-link docs-main__nav-list-link">
-                                            Installation
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <h3 class="docs-main__deployment-title my-1">
-                                Deployments
-                            </h3>
-                                <nav class="docs-main__nav-bottom">
-                                    <ul class="docs-main__nav-bottom-list">
-                                        <li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
-                                            <a href="#" class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
-                                                Setting up a container
-                                            </a>
-                                        </li>
-                                        <li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
-                                            <a href="#" class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
-                                                Using the CLI
-                                            </a>
-                                        </li>
-                                        <li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
-                                            <a href="#" class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
-                                                Managing resources
-                                            </a>
-                                        </li>
-                                        <li class="docs-main__nav-bottom-list-item docs-main-__av-list-item">
-                                            <a href="#" class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
-                                                Upgrade & downgrade
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                        </aside>
-                    </div>
-                    <!-- docs main intro -->
-                    <section class="card docs-main__intro">
-                        <article>
-                            <h2 class="docs-main__intro-title mb-1">
-                                Introduction
-                            </h2>
-                            <p class="docs-main__intro-paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sint dolorem voluptates quis? Officia voluptatem exercitationem sint cum. Facilis earum molestiae vel temporibus hic voluptate aut ab quae blanditiis repellat.
-                            </p>
-                            <div class="bg--alert-success flex flex--align-items-baseline my-1">
-                                <i class="fa fa-info  d--block text--white" aria-hidden="true"></i>
-                                <p class="pl-1 docs-main__intro-paragraph">
-                                    onsectetur adipisicing elit. Blanditiis deserunt veniam facere architecto? Corporis 
-                                </p>
-                            </div>
-                            <article>
-                                <h3 class="docs-main__intro-subtitle mb-1">
-                                    Lorem, ipsum dolor
-                                </h3>
-                                <p class="docs-main__intro-paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia voluptatum pariatur dolorem officiis modi libero aliquid optio asperiores facere?
-                                </p>
-                                <button class="btn btn--bg-blue mt-1 mb-2">
-                                    Install CLI
-                                </button>
-                            </article>
-                        </article>
-                        <h3 class="docs-main__intro-subtitle mb-1">
-                            Requirements
-                        </h3>
-                        <ul class="docs-main__intro-requirements-list">
-                            <li class="docs-main__intro-requirements-list-item">
-                                Windows 10, Mac OSX, Linux
-                            </li>
-                            <li class="docs-main__intro-requirements-list-item">
-                                Node.js v12 or higher
-                            </li>
-                        </ul>
-                        <h3 class="docs-main__intro-subtitle my-1">
-                            Install
-                        </h3>
-                        <p class="docs-main__intro-os-rq">
-                            Mac (Homebrew)
-                        </p>
-                        <div class="docs-main__intro-code-container">
-                            <pre ng-show = "textFile.isPresent">
-                                <code class="docs-main__intro-code">
+<header class="header py-2">
+<div class=container>
+<nav class="header__nav nav flex flex--justify-content-between flex--align-items-center">
+<span class="header__logo nav__logo">
+Loruki.
+</span>
+<ul class="header__nav-list nav__list flex">
+<li class="header__nav-list-item nav__list-item">
+<a href=index.html class="header__nav-list-link nav__list-link">
+Home
+</a>
+</li>
+<li class="header__nav-list-item nav__list-item">
+<a href=features.html class="header__nav-list-link nav__list-link">
+Features
+</a>
+</li>
+<li class="header__nav-list-item nav__list-item">
+<a href=docs.html class="header__nav-list-link nav__list-link">
+Docs
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id=main>
+<section class=docs>
+<div class=container>
+<div class="row grid grid-gap-2 grid-column-xl-2 grid-column-sm-1">
+<div class=docs__text-box>
+<h1 class=docs__title>
+Docs
+</h1>
+<p class="docs__paragraph mt-1">
+Learn how to work with the Loruki platform
+</p>
+</div>
+<figure class=docs__img-container>
+<img src=images/docs-min.png alt="image that represents docs" class=docs__img>
+</figure>
+</div>
+</div>
+</section>
+<section class="docs-main my-3">
+<div class=container>
+<div class="row grid grid-gap-1">
+<div class=docs-main__left>
+<aside class="card docs-main__card">
+<h3 class="docs-main__essentials-title mb-1">
+Essentials
+</h3>
+<nav class=docs-main__nav-top>
+<ul class=docs-main__nav-list>
+<li class="docs-main__nav-top-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-top-list-link active docs-main__nav-list-link">
+Introduction
+</a>
+</li>
+<li class="docs-main__nav-top-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-top-list-link docs-main__nav-list-link">
+About Loruki
+</a>
+</li>
+<li class="docs-main__nav-top-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-top-list-link docs-main__nav-list-link">
+Installation
+</a>
+</li>
+</ul>
+</nav>
+<h3 class="docs-main__deployment-title my-1">
+Deployments
+</h3>
+<nav class=docs-main__nav-bottom>
+<ul class=docs-main__nav-bottom-list>
+<li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
+Setting up a container
+</a>
+</li>
+<li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
+Using the CLI
+</a>
+</li>
+<li class="docs-main__nav-bottom-list-item docs-main__nav-list-item">
+<a href=# class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
+Managing resources
+</a>
+</li>
+<li class="docs-main__nav-bottom-list-item docs-main-__av-list-item">
+<a href=# class="docs-main__nav-bottom-list-link docs-main__nav-list-link">
+Upgrade & downgrade
+</a>
+</li>
+</ul>
+</nav>
+</aside>
+</div>
+<section class="card docs-main__intro">
+<article>
+<h2 class="docs-main__intro-title mb-1">
+Introduction
+</h2>
+<p class=docs-main__intro-paragraph>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sint dolorem voluptates quis? Officia voluptatem exercitationem sint cum. Facilis earum molestiae vel temporibus hic voluptate aut ab quae blanditiis repellat.
+</p>
+<div class="bg--alert-success flex flex--align-items-baseline my-1">
+<i class="fa fa-info d--block text--white" aria-hidden=true></i>
+<p class="pl-1 docs-main__intro-paragraph">
+onsectetur adipisicing elit. Blanditiis deserunt veniam facere architecto? Corporis
+</p>
+</div>
+<article>
+<h3 class="docs-main__intro-subtitle mb-1">
+Lorem, ipsum dolor
+</h3>
+<p class=docs-main__intro-paragraph>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia voluptatum pariatur dolorem officiis modi libero aliquid optio asperiores facere?
+</p>
+<button class="btn btn--bg-blue mt-1 mb-2">
+Install CLI
+</button>
+</article>
+</article>
+<h3 class="docs-main__intro-subtitle mb-1">
+Requirements
+</h3>
+<ul class=docs-main__intro-requirements-list>
+<li class=docs-main__intro-requirements-list-item>
+Windows 10, Mac OSX, Linux
+</li>
+<li class=docs-main__intro-requirements-list-item>
+Node.js v12 or higher
+</li>
+</ul>
+<h3 class="docs-main__intro-subtitle my-1">
+Install
+</h3>
+<p class=docs-main__intro-os-rq>
+Mac (Homebrew)
+</p>
+<div class=docs-main__intro-code-container>
+<pre ng-show=textFile.isPresent>
+                                <code class=docs-main__intro-code>
                                     $ brew install loruki-cli
                                 </code>
                             </pre>
-                        </div>
-                        <p class="docs-main__intro-os-rq">
-                            NPM
-                        </p>
-                        <div class="docs-main__intro-code-container">
-                            <pre ng-show = "textFile.isPresent">
-                                <code class="docs-main__intro-code">
+</div>
+<p class=docs-main__intro-os-rq>
+NPM
+</p>
+<div class=docs-main__intro-code-container>
+<pre ng-show=textFile.isPresent>
+                                <code class=docs-main__intro-code>
                                    $ npm install loruki-cli
                                 </code>
                             </pre>
-                        </div>
-                        <p class="docs-main__intro-os-rq">
-                            Yarn
-                        </p>
-                        <div class="docs-main__intro-code-container">
-                            <pre>
-                                <code class="docs-main__intro-code">
+</div>
+<p class=docs-main__intro-os-rq>
+Yarn
+</p>
+<div class=docs-main__intro-code-container>
+<pre>
+                                <code class=docs-main__intro-code>
                                     $ yarn install loruki-cli
                                 </code>
                             </pre>
-                        </div>
-                        
-                    </section>
-                </div>
-            </div>
-        </section>
-    </main>
-     <!-- footer -->
-     <footer class="footer py-4">
-        <div class="container">
-            <div class="row grid grid-gap-2 grid-column-xl-3 grid-column-sm-1">
-                <div class="footer__text-box text--white">
-                    <span class="text-sz-2 footer__paragrpaph mb-1">
-                        Loruki
-                    </span>
-                    <small class="footer__copyright d--block">
-                        Copyright &copy;2021
-                    </small>
-                </div>
-                <nav class="footer__nav nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-list-item">
-                            <a href="index.html" class="footer__nav-link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="features.html" class="footer__nav-link">
-                                Features
-                            </a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="features.html" class="footer__nav-link">
-                                Docs
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="footer__social-list flex">
-                    <li class="footer__social-list-item">
-                        <a href="#" class="footer__social-list-link">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-list-item">
-                        <a href="#" class="footer__social-list-link">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-list-item">
-                        <a href="#" class="footer__social-list-link">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="footer__social-list-item">
-                        <a href="#" class="footer__social-list-link">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+</div>
+</section>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer py-4">
+<div class=container>
+<div class="row grid grid-gap-2 grid-column-xl-3 grid-column-sm-1">
+<div class="footer__text-box text--white">
+<span class="text-sz-2 footer__paragrpaph mb-1">
+Loruki
+</span>
+<small class="footer__copyright d--block">
+Copyright &copy;2021
+</small>
+</div>
+<nav class="footer__nav nav">
+<ul class=footer__nav-list>
+<li class=footer__nav-list-item>
+<a href=index.html class=footer__nav-link>
+Home
+</a>
+</li>
+<li class=footer__nav-list-item>
+<a href=features.html class=footer__nav-link>
+Features
+</a>
+</li>
+<li class=footer__nav-list-item>
+<a href=features.html class=footer__nav-link>
+Docs
+</a>
+</li>
+</ul>
+</nav>
+<ul class="footer__social-list flex">
+<li class=footer__social-list-item>
+<a href=# class=footer__social-list-link>
+<i class="fa fa-instagram" aria-hidden=true></i>
+</a>
+</li>
+<li class=footer__social-list-item>
+<a href=# class=footer__social-list-link>
+<i class="fa fa-github" aria-hidden=true></i>
+</a>
+</li>
+<li class=footer__social-list-item>
+<a href=# class=footer__social-list-link>
+<i class="fa fa-facebook" aria-hidden=true></i>
+</a>
+</li>
+<li class=footer__social-list-item>
+<a href=# class=footer__social-list-link>
+<i class="fa fa-twitter" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
 </body>
 </html>
