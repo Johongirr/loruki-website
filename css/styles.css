@@ -33,6 +33,7 @@ fieldset {
 }
 li {
     list-style: none;
+    border: none;
 }
 pre,
 code {
@@ -49,10 +50,10 @@ img {
 }
 /* ==== Container ==== */
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 3.3rem;
+    
 }
 
 
@@ -86,8 +87,9 @@ img {
     background-color: var(--primary-color);
    
 }
+ 
 .header .header__nav-list-item {
-    padding-right: 1.1rem;
+    padding-right: 1.5rem;
 }
 .header .header__logo {
     font-size: 2rem;
@@ -98,6 +100,12 @@ img {
 }
 .header .header__nav-list-link {
     color: var(--white);
+    transition: all .3s;
+     
+    
+}
+.header .header__nav-list-link:hover {
+    border-bottom: 2px solid rgb(243, 235, 235);
 }
 /* ============================================================= Home Section ======================================================== */
 /* ==== Showcase ==== */
@@ -110,13 +118,15 @@ img {
 }
 .showcase .grid {
     padding-top: 3rem;
-    grid-template-columns: 55% auto;
+    grid-template-columns: 1fr 1fr;
      
     
 }
     /* === Showcase text box */
 .showcase .showcase__text-box {
     animation: slideInLeft 1s ease-in-out;
+    text-align: center;
+    justify-self: center;
 }
 .showcase .showcase__title {
     font-weight: 100;
@@ -126,11 +136,13 @@ img {
     /* ==== Showcase form ==== */
 .showcase .showcase__form-container {
     height: 300px;
-    width: 350px;
+    width: 70%;
+    justify-self: center;
     padding: 3rem 2rem;
     animation: slideInRight 1s ease-in-out;
 
 }
+ 
 .showcase .showcase__form .showcase__form-title {
     font-size: clamp(1.1rem, calc(4vw +1), 2rem);
     font-weight: normal;
@@ -192,6 +204,9 @@ img {
 .cli .cli__img-container {
     grid-area: 1 / 1 / 3 / 3;
 }
+.cli .cli__img {
+    width: 100%;
+}
 .cli .cli__text-box {
     padding: 1rem;
     display: flex;
@@ -215,7 +230,7 @@ img {
     color: var(--white);
 }
 .cloud .cloud__title {
-    font-size: clamp(2.2rem, calc(4vw + 1.2rem), 3.2rem);
+    font-size: clamp(2.5rem, calc(4vw + 1.2rem), 3.5rem);
     font-weight: 100;
 }
 .cloud .cloud__paragraph {
@@ -244,8 +259,8 @@ img {
 }
 .languages .languages__card {
     transition: transform .2s ease-in-out;
-    margin-right: 1.2rem;
-    flex-grow: 1;
+    
+   
 }
 .languages .languages__card:hover {
     transform:translateY(-1rem);
@@ -264,17 +279,18 @@ img {
 }
 .features .features__text-box {
     align-self: center;
+    text-align: center;
     color: var(--white);
 }
 .features .features__title {
-    font-size: clamp(2rem, calc(2vw + 1rem), 3.3rem);
+    font-size: clamp(2rem, calc(4vw + 1rem), 4rem);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .features .features__paragraph {
     font-size: 1.1rem;
 }
 .features .features__img-container {
-    justify-self: end;
+    justify-self: cen;
 }
 .features .features__img {
     width: 200px;
@@ -395,10 +411,12 @@ img {
 }
 .docs-main pre {
     white-space: nowrap;
-    padding: 5px;
     height: 100%;
     display: flex;
     align-items: center;
+}
+.docs-main .docs-main__intro-code {
+    margin-left: 0.8rem;
 }
 
 
@@ -445,5 +463,71 @@ img {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+/* media queries */
+@media(max-width: 1000px) {
+    .showcase {
+        padding-top: 0;
+    }
+    .showcase .grid {
+        grid-template-columns: 1fr;
+        
+    }
+    .stats {
+        margin-top: 25rem;
+    }
+    .stats .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-column-lg-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cli .cli__text-box {
+        grid-column: 1 / 3;
+    }
+    .cloud .grid {
+        grid-template-columns: 1fr;
+    }
+   
+}
+ 
+@media(max-width: 768px){
+    .grid-column-sm-1{
+        grid-template-columns: 1fr;
+    }
+    .features .features__img-container {
+        justify-self: center;
+    }
+    .platform .platform__img-container {
+        justify-self: center;
+    }
+    .features-info .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0.3rem;
+        grid-template-areas: 
+        "server server server"
+        "network network network"
+        "code code code"
+        "database database database"
+        "power power power"
+        "publish publish publish";
+    }
+    .docs .docs__text-box {
+        text-align: center;
+    }
+    .docs .docs__img-container {
+        justify-self: center;
+    }
+    .docs-main .grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 500px){
+    .header .header__nav {
+        flex-direction: column;
     }
 }
